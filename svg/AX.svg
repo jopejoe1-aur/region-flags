@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 260 170">
-<rect fill="#0064AE" width="260" height="170"/>
-<g fill="#FFD300">
-<rect x="80" width="50" height="170"/>
-<rect y="60" width="260" height="50"/>
-</g>
-<g fill="#DB0F16">
-<rect x="95" width="20" height="170"/>
-<rect y="75" width="260" height="20"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="340" viewBox="0 0 52 34"><path d="M0 0h52v34H0Z" fill="#0064AD"/><path d="M0 17h52M21 0v34" stroke-width="10" stroke="#FFD300"/><path d="M0 17h52M21 0v34" stroke-width="4" stroke="#DA0E15"/></svg>

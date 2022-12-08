@@ -107,12 +107,11 @@ def load_subregions():
     region_codes = []
     for i in glob.glob("tsv/*.tsv"):
         region_code = i.removeprefix("tsv/iso-3166-2-").removesuffix(".tsv")
-        if region_code in ["AU", "CA", "CO", "DE", "ES", "GB", "US", "AE", "AR", "AT", "BR", "CH", "EE", "KR", "JP"]:
+        if region_code.upper() in ["AU", "CA", "CO", "DE", "ES", "FR", "GB", "US", "AE", "AR", "AT", "BR", "CH", "EE", "KR", "JP", "NL"]:
             region_codes.append(region_code)
         # Set specific language
         elif region_code == "MX":
             region_codes.append([region_code, "ES"])
-
     for i in region_codes:
         filename = 'tsv/iso-3166-2-%s.tsv' % i
         match i:
@@ -194,7 +193,6 @@ def load_subregions():
                     for e in load_subregion_entries(filename)
                     if not e['Subdivision name'].endswith('*')
                 })
-
     return subregions
 
 
